@@ -1,0 +1,141 @@
+.invitation{
+  background:#373640;
+  height:10rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:2rem;
+  padding:2rem;
+  justify-items: center;
+  align-content: center;
+  width:85%;
+  margin:0 auto;
+  border-radius: 10px;
+  color:white;
+  margin-top:-4rem;
+}
+.invitation button{
+  width:12rem;
+  height:3rem;
+  background: none;
+  border-radius:20px;
+  border:3px solid #6927ff;
+  color:white;
+  transition:all .2s;
+  font-size:1.2rem;
+  transform: rotate(-2deg);
+  align-self: center;
+  justify-self: center;
+}
+.invitation  button:hover{
+  color: #6927ff;
+  background: white;
+  border-color:white;
+  cursor: pointer;
+}
+
+.invitation p{
+  font-size:1.1rem;
+  line-height: .7cm;
+}
+.footer{
+  margin-top:8rem;
+  border-top:1px solid gainsboro;
+  min-height:70vh;
+  background-image: linear-gradient(to top left,rgba(255,255,255,0),rgba(255,255,255,.4));
+  background-color:#6927ff;
+  position: relative;
+  padding:0;
+}
+.msg{
+  text-align: center;
+  margin-top:10rem;
+  color: whitesmoke;
+  letter-spacing: .03cm;
+  word-spacing: .01cm;
+  font-family: 'Lato';
+}
+.warning{
+  text-align: center;
+  color: whitesmoke;
+  letter-spacing: .03cm;
+  word-spacing: .01cm;
+  padding:1rem 0 1rem 0;
+  font-weight: 500;
+  margin-top:.1%;
+}
+.footerSocial{
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:auto auto auto;
+  align-items: center;
+  grid-gap:1.2rem;
+  width:10rem;
+  margin-top:1rem;
+  padding-bottom:2rem;
+}
+.madeWith{
+  color:gainsboro;
+  text-align:center;
+  margin-top:10%;
+}
+.REACT{
+  font-weight:900;
+  font-size: 1rem;
+}
+.google{
+  font-size:30px;
+}
+.twitter{
+  font-size:35px;
+}
+.facebook{
+  font-size:30px;
+}
+
+.google:hover{
+  color:gainsboro;
+}
+.twitter:hover{
+  color:#00aced;
+  background:white;
+}
+.facebook:hover{
+  color:gainsboro;
+}
+
+
+@media screen and (max-width: 920px){
+  .invitation{
+    grid-template-columns: 1fr;
+    height:17rem;
+    grid-gap:2rem;
+    padding:2rem;
+  }
+}
+@media only screen and (max-width: 480px){
+  .invitation{
+    grid-template-columns: 1fr;
+    grid-gap:1.5rem;
+    padding:1rem;
+  }
+  .invitation button{
+    width:10rem;
+    height:2rem;
+    font-size:1rem;
+  }
+  .invitation p{
+    font-size:1rem;
+    line-height: .6cm;
+  }
+}
+@media only screen and (max-width: 550px){
+  .footer{
+    font-size: 85%;
+  }
+  .google,.facebook{
+    font-size: 25px;
+  }
+  .twitter{
+    font-size:30px;
+  }
+}

@@ -1,0 +1,140 @@
+.container{
+  background: ghostwhite;
+  color: black;
+  margin-top: -2rem;
+  position: relative;
+  z-index:3;
+  height:100vh;
+  background-image: linear-gradient(to bottom left,rgba(255,255,255,0),rgba(255,255,255,.5));
+  background-color: #6927ff;
+  color:whitesmoke;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 99%, 0% 100%);
+clip-path: polygon(0 0, 100% 0%, 100% 99%, 0% 100%);
+}
+.about{
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,-30%);
+  width:50%;
+  text-align: center;
+  margin:0 auto;
+}
+.about h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top:5rem;
+}
+.about h4{
+  font-size:1.4rem;
+  font-weight:300;
+  line-height:.8cm;
+  margin-top:2rem;
+  font-family: 'Ubuntu', sans-serif;
+  word-spacing: .02cm;
+}
+
+.skills{
+  width:50%;
+  margin:3rem auto 0 auto;
+  padding:1rem 0;
+  color:white;
+  font-family: 'ZCOOL QingKe HuangYou';
+  transform: rotate(-3deg);
+  font-weight: 100;
+  background: ghostwhite;
+  position: relative;
+  z-index:10;
+}
+.skills::before{
+  content:'';
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  transform: rotate(3deg);
+  background: #3C1A5B;
+  z-index:-1;
+}
+.skills p{
+  font-weight: 700;
+  font-size:1.5rem;
+  margin: 12px auto;
+}
+.a{
+  color:whitesmoke;
+}
+.skill{
+  color:#FFF748;
+  font-family: 'ZCOOL QingKe HuangYou';
+}
+
+@media screen and (min-width: 820px) and (max-width: 1140px){
+  .about{
+    width:70%;
+  }
+}
+@media screen and (min-width: 688px) and (max-width: 819px){
+  .about{
+    width:80%;
+  }
+  .skills p{
+    font-size:1.3rem;
+    margin:1rem auto;
+  }
+  .skills{
+    margin-top:2rem;
+  }
+}
+@media only screen and (max-width: 687px){
+  .about{
+    width:95%;
+  }
+  .about h4{
+    font-size:1.2rem;
+  }
+  .skills p{
+    font-size:1.2rem;
+    margin:1rem auto;
+  }
+
+}
+@media only screen and (max-width: 550px){
+  .about{
+    width:98%;
+  }
+
+  .about h4{
+    font-size:1rem;
+    line-height: .6cm;
+  }
+  .skills p{
+    font-size:1.2rem;
+    margin:.4rem auto;
+    font-family: 'Lato';
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+  .container{
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .about{
+    width:98%;
+    height:105vh;
+  }
+  .about h4{
+    font-size:1.1rem;
+  }
+  .skills p{
+    font-size:1rem;
+    margin:.4rem auto;
+    font-family: 'Lato';
+  }
+  .skills{
+    margin-top:1rem;
+  }
+
+}

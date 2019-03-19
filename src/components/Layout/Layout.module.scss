@@ -1,0 +1,15 @@
+.logout{
+  background: transparent;
+  border: 1px solid gray;
+  position: absolute;
+  top:1rem;
+  right:9rem;
+  padding: .4rem;
+  transition: all .1s;
+  border-radius:2px;
+  cursor: pointer;
+  color:gray;
+}
+.logout:hover{
+  color:red;
+}
