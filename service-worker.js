@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tanveerctg/myportfolio/precache-manifest.28af40fcb0833abf9746e6c878c8f201.js"
+  "/myportfolio/precache-manifest.b98226db0bf936d0424db6ede4f9b684.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/tanveerctg/myportfolio/index.html", {
+workbox.routing.registerNavigationRoute("/myportfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
